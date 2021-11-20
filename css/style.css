@@ -41,7 +41,20 @@
     height: 30px;
     border-radius: 50%;
 }
-
+.card{
+    border: none;
+}
+.status-card {
+    transition: 0.3s;
+}
+.status-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0  5px rgba(0,0,0,0.4);
+}
+.status-card:active {
+    transform: scale(1.05);
+    box-shadow: 0 0  5px rgba(0,0,0,0.4);
+}
 @media screen and (max-width: 780px) {
     .sidebar {
         position: fixed;

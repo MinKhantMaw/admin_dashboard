@@ -13,19 +13,22 @@
   <body>
     <section class="main container-fluid">
       <div class="row">
+          <!-- Side bar -->
         <div class="col-12 col-lg-3 col-xl-2 vh-100 sidebar">
             <div class="d-flex justify-content-between align-items-center py-2 mt-3">
                 <div class="d-flex align-items-center">
                     <span class="bg-primary p-2 rounded d-flex justify-content-center align-items-center mr-2">
                         <i class="feather-shopping-bag text-white h4 mb-0"></i>
                     </span>
-                    <span class="font-weight-bolder h4 mb-0 text-uppercase text-primary">My Shop</span>
+                    <span class="font-weight-bolder h4 mb-0 text-uppercase text-primary">KHANT Shop</span>
                 </div>
                 <button class="hide-sidebar-btn btn btn-light d-block d-lg-none">
                     <i class="feather-x text-primary" style="font-size: 2em;"></i>
                 </button>
             </div>
         </div>
+        <!-- End Side bar -->
+        <!-- Start content -->
         <div class="col-12 col-lg-9 col-xl-10 vh-100 py-3 content">
             <div class="row header mb-4">
                 <div class="col-12">
@@ -55,42 +58,88 @@
                     </div>
                 </div>
             </div>
-            <div class="row header mt-3">
+            <div class="row mt-3">
                 <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="card">
+                    <div class="card mb-3 status-card " onclick="go('http://www.google.com')">
                         <div class="card-body">
-                            <div class="p-5"></div>
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <i class="feather-shopping-bag h1 text-primary"></i>
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="h4 mb-2 font-weight-bolder">
+                                        <span class="counter-up">123</span>
+                                    </p>
+                                    <p class="mb-0">Today Order</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                  <div class="card">
-                      <div class="card-body">
-                          <div class="p-5"></div>
-                      </div>
-                  </div>
-              </div><div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                  <div class="card">
-                      <div class="card-body">
-                          <div class="p-5"></div>
-                      </div>
-                  </div>
-              </div><div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                  <div class="card">
-                      <div class="card-body">
-                          <div class="p-5"></div>
-                      </div>
-                  </div>
+                    <div class="card mb-3 status-card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <i class="feather-user h1 text-primary"></i>
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="h4 mb-2 font-weight-bolder">
+                                        <span class="counter-up">230</span>
+                                    </p>
+                                    <p class="mb-0">Today User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-3 status-card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <i class="feather-package h1 text-primary"></i>
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="h4 mb-2 font-weight-bolder">
+                                        <span class="counter-up">120</span>
+                                    </p>
+                                    <p class="mb-0">Today Items</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-3 status-card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <i class="feather-map h1 text-primary"></i>
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="h4 mb-2 font-weight-bolder">
+                                        <span class="counter-up">14</span>
+                                    </p>
+                                    <p class="mb-0">Support location</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
-              
             </div>
         </div>
+        <!-- end content -->
       </div>
      
     </section>
     <script src="vendor/jquery.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="vendor/counter_up/counter_up.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
   </body>
 </html>
